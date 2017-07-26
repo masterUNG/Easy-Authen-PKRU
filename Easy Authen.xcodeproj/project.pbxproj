@@ -12,6 +12,7 @@
 		C49C155C1F2887E70002091E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C49C155A1F2887E70002091E /* Main.storyboard */; };
 		C49C155E1F2887E70002091E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C49C155D1F2887E70002091E /* Assets.xcassets */; };
 		C49C15611F2887E70002091E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C49C155F1F2887E70002091E /* LaunchScreen.storyboard */; };
+		C49C15691F288BC60002091E /* logo_40pkru.png in Resources */ = {isa = PBXBuildFile; fileRef = C49C15681F288BC60002091E /* logo_40pkru.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C49C155D1F2887E70002091E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C49C15601F2887E70002091E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C49C15621F2887E70002091E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C49C15681F288BC60002091E /* logo_40pkru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_40pkru.png; path = ../../../../Desktop/logoPkru/logo_40pkru.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				C49C15561F2887E70002091E /* AppDelegate.swift */,
+				C49C15681F288BC60002091E /* logo_40pkru.png */,
 				C49C15581F2887E70002091E /* ViewController.swift */,
 				C49C155A1F2887E70002091E /* Main.storyboard */,
 				C49C155D1F2887E70002091E /* Assets.xcassets */,
@@ -123,6 +126,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C49C15691F288BC60002091E /* logo_40pkru.png in Resources */,
 				C49C15611F2887E70002091E /* LaunchScreen.storyboard in Resources */,
 				C49C155E1F2887E70002091E /* Assets.xcassets in Resources */,
 				C49C155C1F2887E70002091E /* Main.storyboard in Resources */,

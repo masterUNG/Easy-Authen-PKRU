@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Easy_Authen" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,84 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_40pkru.png" translatesAutoresizingMaskIntoConstraints="NO" id="IZG-YS-xRc">
+                                <rect key="frame" x="67.5" y="28" width="240" height="242"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="242" id="hyO-CK-b8i"/>
+                                    <constraint firstAttribute="width" constant="240" id="kkw-Qh-V3v"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qQG-AB-92J">
+                                <rect key="frame" x="96.5" y="305" width="182" height="30"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KUC-FW-pYo"/>
+                                    <constraint firstAttribute="width" constant="182" id="dZC-Nn-ICa"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nXJ-qj-Urr">
+                                <rect key="frame" x="96.5" y="364" width="182" height="30"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="L2A-8o-50h"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="SJw-tO-1hu"/>
+                                    <constraint firstAttribute="width" constant="182" id="gMW-VU-wPo"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="182" id="oUf-zn-VxS"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCt-JF-HQ8">
+                                <rect key="frame" x="16" y="617" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0XB-Ha-JJT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7t-TC-Jal">
+                                <rect key="frame" x="16" y="411" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="IZG-YS-xRc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2za-0U-t4W"/>
+                            <constraint firstItem="nXJ-qj-Urr" firstAttribute="top" secondItem="qQG-AB-92J" secondAttribute="bottom" constant="29" id="Ax8-oy-egZ"/>
+                            <constraint firstItem="IZG-YS-xRc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="IWB-e2-5f2"/>
+                            <constraint firstItem="nXJ-qj-Urr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mcw-UL-KAD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="N7t-TC-Jal" secondAttribute="trailing" id="ON1-Id-Pvi"/>
+                            <constraint firstItem="IZG-YS-xRc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Va4-Si-ZBe"/>
+                            <constraint firstItem="N7t-TC-Jal" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ZLo-Qv-lH0"/>
+                            <constraint firstItem="N7t-TC-Jal" firstAttribute="top" secondItem="nXJ-qj-Urr" secondAttribute="bottom" constant="17" id="gc5-hq-xSt"/>
+                            <constraint firstItem="qQG-AB-92J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lCd-M9-SCS"/>
+                            <constraint firstItem="qQG-AB-92J" firstAttribute="top" secondItem="IZG-YS-xRc" secondAttribute="bottom" constant="35" id="nuB-IK-w6r"/>
+                            <constraint firstItem="N7t-TC-Jal" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r4U-kA-YGI"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="N7t-TC-Jal" id="xm5-dk-kJ4"/>
+                        <outlet property="passwordTextField" destination="nXJ-qj-Urr" id="JwM-aj-43N"/>
+                        <outlet property="userTextField" destination="qQG-AB-92J" id="Eva-op-48a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo_40pkru.png" width="500" height="591"/>
+    </resources>
 </document>
